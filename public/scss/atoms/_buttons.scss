@@ -1,0 +1,45 @@
+// ==========================================================================
+// $btn
+// ==========================================================================
+
+.btn {
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 1.5em;
+  font-weight: 500;
+  letter-spacing: rem(1);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: rem(1) solid;
+  border-radius: 2em;
+  transition: all 0.25s ease;
+
+  @include hover {
+    background-color: $black;
+    color: $white;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $btn--blue
+// ==========================================================================
+
+.btn--blue {
+  background-color: $blue;
+}
+
+
+
+
+// ==========================================================================
+// $btn--white
+// ==========================================================================
+
+.btn--white {
+  background-color: $white;
+  color: $blue;
+}

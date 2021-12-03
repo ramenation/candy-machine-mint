@@ -1,0 +1,144 @@
+// ==========================================================================
+// $intro
+// ==========================================================================
+
+#intro {
+  padding-top: rem(50);
+
+  @include media('>=tablet-l', 'landscape') {
+    padding-top: rem(100);
+  }
+}
+
+
+
+
+// ==========================================================================
+// $traits
+// ==========================================================================
+
+
+#traits {
+  text-align: center;
+
+  img {
+    max-width: rem(1500);
+    margin: 0 auto;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $roadmap
+// ==========================================================================
+
+
+#roadmap {
+  ol {
+    @include reset-list;
+    counter-reset: ramen-counter;
+
+    li {
+        counter-increment: ramen-counter;
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 0.5em;
+        font-size: 1.3em;
+  
+      &::before {
+        content: counter(ramen-counter, decimal-leading-zero);
+        color: $yellow;
+        font-weight: bold;
+        font-size: 1em;
+        margin-right: 1em;
+        line-height: 1;
+      }
+    }
+  }
+}
+
+
+
+
+// ==========================================================================
+// $gallery
+// ==========================================================================
+
+#gallery {
+  ul {
+    @include reset-list;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  li {
+    width: span(5.75);
+    margin-bottom: gutter(12) + span(0.5);
+  }
+
+  @include media('>=tablet') {
+    li {
+      width: span(3);
+      padding: 0 gutter(12) / 2;
+      margin-bottom: gutter(6);
+    }
+  }
+}
+
+
+
+
+// ==========================================================================
+// $faq
+// ==========================================================================
+
+#faq {
+  h2 {
+    text-align: center;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $team
+// ==========================================================================
+
+#team {
+  text-align: center;
+
+  ul {
+    margin-top: rem(80);
+    @include reset-list;
+    text-transform: uppercase;
+    letter-spacing: rem(1);
+
+    li {
+      padding: 0 span(2);
+      margin-bottom: 3em;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  @include media('>=tablet') {
+    ul {
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        width: span(3);
+        padding: 0 gutter(12);
+      }
+    }
+  }
+}
+
+
+

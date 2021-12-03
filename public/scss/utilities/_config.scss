@@ -1,0 +1,84 @@
+// ==========================================================================
+// $susy settings
+// ==========================================================================
+
+$susy: (
+  'columns':                  susy-repeat(12),
+  'gutters':                  0.25,
+  'spread':                   'narrow',
+  'container-spread':         'narrow'
+);
+
+
+
+
+// ==========================================================================
+// $breakpoints
+// ==========================================================================
+
+// @required for  - `media()` mixin
+// @source        - http://include-media.com/
+
+$breakpoints: (
+  mobile:                     em(599),
+  tablet:                     em(600),
+  tablet-l:                   em(960),
+  desktop:                    em(1260),
+  desktop-l:                  em(1900),
+  desktop-xl:                 em(2500)
+);
+
+
+
+
+// ==========================================================================
+// $typi
+// ==========================================================================
+
+// @required for  - `typi()` mixin
+// @source        - https://github.com/zellwk/typi
+
+$typi: (
+  base: (
+    null:                     (16px, $base-line-height),
+    tablet:                   ($base-font-size),
+    desktop-l:                (20px)
+  ),
+
+  h1: (
+    null:                     (81px, 1.2),
+    tablet-l:                 (90px),
+    desktop:                  (118px)
+  ),
+
+  h2: (
+    null:                     (54px, 1.2),
+    tablet:                   (72px),
+    desktop:                  (81px)
+  ),
+
+  h3: (
+    null:                     (36px, 1.2),
+    tablet:                   (45px),
+    desktop:                  (63px)
+  )
+);
+
+
+
+
+// ==========================================================================
+// $z-index
+// ==========================================================================
+
+$z-index: (
+  overlay:                   900,
+  dropdown:                  800,
+  nav:                       700,
+  header:                    600,
+  footer:                    500,
+  pseudo:                    400,
+  overlap:                   200,
+  default:                   1,
+  bottomless-pit:            -100
+);

@@ -1,0 +1,84 @@
+// ==========================================================================
+// $header
+// ==========================================================================
+
+header,
+footer {
+  font-weight: 500;
+  letter-spacing: rem(1);
+  text-transform: uppercase;
+
+  .container {
+    padding: rem(15) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 1.5%;
+  left: 0;
+  z-index: 99;
+  will-change: transform;
+  transition: transform 200ms ease-in-out;
+  background-color: $black;
+  
+  &.headroom--top,
+  &.headroom--pinned {
+    transform: translateY(0) !important;
+  }
+
+  &.headroom--not-top {
+    top: 0;
+    .container {
+      padding: rem(15) 0;
+    }
+  }
+
+  &.headroom--not-top.headroom--unpinned {
+    transform: translateY(-100%);
+  }
+}
+
+
+
+
+// ==========================================================================
+// $header__left
+// ==========================================================================
+
+.header__left {
+  img {
+    max-width: rem(25);
+  }
+
+  a {
+    font-weight: bold;
+  }
+
+  li {
+    margin-right: 1em;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $header__right
+// ==========================================================================
+
+.header__right {
+  li {
+    margin-left: 1em;
+  }
+
+  @include media('<tablet-l') {
+    li:nth-last-child(1n+3) {
+      display: none;
+    }
+  }
+}

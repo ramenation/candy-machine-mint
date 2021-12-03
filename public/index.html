@@ -1,43 +1,292 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<!doctype html>
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js gt-ie9 ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js gt-ie9"> <!--<![endif]-->
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="prefetch" href="index.html">
+  <meta name="robots" content="all">
+  <meta name="viewport" content="width=device-width, user-scalable=1, initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <!-- Primary Meta Tags -->
+  <title>Solana Noodle Shop</title>
+  <meta name="title" content="Solana Noodle Shop">
+  <meta name="description" content="1,234 unique bowls of ramen served up hot and fresh for the Solana blockchain. Get it hot!">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://noodle.center/">
+  <meta property="og:title" content="Solana Noodle Shop">
+  <meta property="og:description" content="1,234 Unique bowls of ramen served up hot and fresh for the Solana blockchain. Get it hot!">
+  <meta property="og:image" content="assets/img/meta-image.jpg">
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://twitter.com/SolNoodleShop">
+  <meta property="twitter:title" content="Solana Noodle Shop">
+  <meta property="twitter:description" content="1,234 Unique bowls of ramen served up hot and fresh for the Solana blockchain. Get it hot!">
+  <meta property="twitter:image" content="assets/img/meta-image.jpg">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body oncontextmenu="return false">
+
+<header><div class="container">
+  <nav class="header__left">
+    <ul>
+      <li><a href="#hero"><img src="assets/img/ramen-logo.svg" alt="Solana Noodle Shop"></a></li>
+      <li><a href="#hero">Solana Noodle Shop</a></li>
+    </ul>
+  </nav>
+
+  <nav class="header__right">
+    <ul>
+      <li><a href="#traits">Traits</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#team">Team</a></li>
+      <li>&nbsp;</li>
+
+      <!-- CHANGE THE LINKS BELOW -->
+      <li><a href="https://twitter.com/SolNoodleShop"><img src="assets/img/icon-twitter.svg" alt="Twitter icon"></a></li>
+      <li><a href="https://discord.gg/XKXgnbXVHf"><img src="assets/img/icon-discord.svg" alt="Discord icon"></a></li>
+    </ul>
+  </nav>
+</div></header>
+
+
+
+
+<main>
+<section id="hero">
+  <div class="container">
+    <h1>Radical Ramen</h1>
+    <p>1,234 totally unique bowls of ramen served up hot and fresh for the Solana blockchain. Get it hot!</p>
+
+    <article class="hero__buttons">
+      <!-- CHANGE THE LINKS BELOW!
+        
+        Feel free to add or remove buttons. Just use either "btn btn--blue" or "btn btn--white" as the classes to select a color.-->
+      <a class="btn btn--blue" href="https://discord.gg/XKXgnbXVHf">When mint?</a>
+      <div id="root"></div>
+      <!-- <a class="btn btn--white" href="">Buy Elsewhere</a> -->
+    </article>
+  </div>
+
+  <img src="assets/img/hero-bg.png" alt="">
+</section>
+
+<section id="intro"><div class="container col-2">
+  <article class="col-2__left">
+    <h2>Righteous Noodles</h2>
+  </article>
+  <article class="col-2__right">
+    <p>Much like a warm bowl of noodle soup, we want to invite anyone and everyone to sit down and join us. We wanted to create an accessible NFT token made for everyone.</p>
+    <p>We cooked it up for the metaverse for everyone that needs a good bowl of noodle soup. Who doesn’t love a good bowl of ramen? A big bowl of hot soup with delicious noodles, and just the right mix of toppings makes a great meal. We’ve mixed up xx number of ingredients. Pork chashu, glass noodles, bamboo shoots, nori, and plum. We’ve mixed them all into a pot for a meal for your profile.</p>
+  </article>
+</div></section>
+
+
+<section id="traits"><div class="container">
+  <h3>What are the traits?</h3>
+
+  <!-- If you choose to change the image below, upload a new image into the assets/img folder and change the filename here. -->
+  <img src="assets/img/traits_pixelated.png" alt="traits">
+</div></section>
+
+
+<section id="roadmap">
+  <div class="container col-2">
+    <article class="col-2__left">
+      <h2>Roadmap</h2>
+    </article>
+    <article class="col-2__right">
+      <p>We’ve set up some goals. We’d like nothing more than to do new drops with new ingredients and recipes in the mix.</p>
+    </article>
+  </div>
+  <div class="container col-middle">
+    <ol>
+
+      <!-- Feel free to add or remove <li> elements here! -->
+      <li>Community Building & Website ✔️ </li>
+      <p>We’ve opened our Discord in order to build the Solana Noodle Shop Community alongside the release of the website. Come join us!</p>
+      <li>Stealth Mint</li>
+      <p> We’ll be dropping our mint link on Twitter and #announcements to provide a fair chance for everyone to mint and reward our early followers. The earlier you discover us, the better!</p>
+      <li>Market Listing and Rarity</li>
+      <p>After our full supply has been minted, we’ll be submitting our marketplace listing for Magic Eden. 
+        We’ll also be securing rarity rankings on Moonrank but a rarity table will also be provided. </p>
+      <li>Holder Verification and Community Wallet Allocation</li>
+      <p>We’ll be pursuing holder verification on our Discord and open up channels for our holders to vibe with each other through 
+        Grape Protocol or SolaLand. When marketplace opens, the community wallet will receive 33.33% of all secondary sales royalties. 
+        Wallet funds will be used for developing community events and a part of it will also be used to do unannounced floor sweeping. 
+        Swept Solana Noodle Shop bowls will be placed in the community wallet and will be used for in-Discord giveaways for verified holders.</p>
+      <li>▒▒▒▒ token airdrops</li>
+      <p> Solana Noodle Shop bowl holders will be able to earn ▒▒▒▒ tokens that will have utility in the Solana Noodle Shop ecosystem. 
+      Our Noodlenomics whitepaper will also be available that will outline the specifics in utility of both the NFTs and ▒▒▒▒ token.</p>
+      <li>Solana Noodle Shop Mechanics</li>
+      <p>We have outlined a comprehensive plan for the Solana Noodle Shop ecosystem that will provide lasting value to the Solana Noodle Shop Noodleverse. Details coming soon. </p>
+    </ol>
+  </div>
+</section>
+
+
+<section id="gallery"><div class="container">
+  <ul>
+
+    <!-- If you choose to change the images below, upload a new image into the assets/img/ramen folder and change the filename here. -->
+    <li><img src="assets/img/ramen/ramen-1.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-2.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-3.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-4.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-5.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-6.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-7.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-8.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-9.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-10.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-11.png" alt=""></li>
+    <li><img src="assets/img/ramen/ramen-12.png" alt=""></li>
+  </ul>
+</div></section>
+
+
+<section id="faq"><div class="container col-middle">
+  <h2>FAQs</h2>
+
+  <div class="tabs">
+    <!-- To add a new FAQ entry, copy the whole tab element, and change the content. Make sure to edit the checkbox id and label for attributes to a new number to make sure the accordion works properly. -->
+
+    <!-- START TAB ELEMENT -->
+    <div class="tab">
+      <input type="checkbox" id=faq-1">
+      <label class="tab__label" for=faq-1"><span>How much is it to mint a ramen bowl?</span></label>
+      <div class="tab__content">
+        At mint a ramen bowl will cost 0.3 ◎
+      </div>
+    </div>
+    <!-- END TAB ELEMENT -->
+
+    
+    <!-- START TAB ELEMENT -->
+    <div class="tab">
+      <input type="checkbox" id=faq-2">
+      <label class="tab__label" for=faq-2"><span>How many ramen bowls?</span></label>
+      <div class="tab__content">
+        For our first collection there will be 1,234 ramen bowls available!
+      </div>
+    </div>
+    <!-- END TAB ELEMENT -->
+    
+    <!-- START TAB ELEMENT -->
+    <div class="tab">
+      <input type="checkbox" id=faq-3">
+      <label class="tab__label" for=faq-3"><span>When will minting start?</span></label>
+      <div class="tab__content">
+       Get involved to find out 🤭
+      </div>
+    </div>
+    <!-- END TAB ELEMENT -->
+
+    <!-- START TAB ELEMENT -->
+    <div class="tab">
+      <input type="checkbox" id=faq-4">
+      <label class="tab__label" for=faq-4"><span>Aren’t NFTs burning the environment?</span></label>
+      <div class="tab__content">
+        <p>Not all blockchains consume as much electricity as a country! One reason we picked the Solana blockchain is its energy efficiency.</p>
+      </div>
+    </div>
+    <!-- END TAB ELEMENT -->
+
+    <!-- START TAB ELEMENT -->
+        <div class="tab">
+          <input type="checkbox" id=faq-5">
+          <label class="tab__label" for=faq-5"><span>How do we get Airdrops?</span></label>
+          <div class="tab__content">        
+              Airdrop schedule will be outlined along with our Noodlenomics. We’ll be taking random snapshots of NFTs holders so make sure to hold your NFTs in your wallet to receive airdrops!
+          </div>
+        </div>
+    <!-- END TAB ELEMENT -->
+
+    <!-- START TAB ELEMENT -->
+        <div class="tab">
+          <input type="checkbox" id=faq-6">
+          <label class="tab__label" for=faq-6"><span>WTF is Noodlenomics!?!?!</span></label>
+          <div class="tab__content">
+            <p>We want to provide utility and value for long term holders, so we’re planning a “breeding” and “burning” system for the whole Solana Noodle Shop ecosystem. These will be discussed in more detail in the succeeding days after mint!</p>
+          </div>
+        </div>
+        <!-- END TAB ELEMENT -->
+
+
+
+    <!-- START TAB ELEMENT -->
+    <div class="tab">
+      <input type="checkbox" id=faq-6">
+      <label class="tab__label" for=faq-6"><span>Wen moon???!</span></label>
+      <div class="tab__content">
+        Per aspera ad astra 🌙🚀🌟
+      </div>
+    </div>
+    <!-- END TAB ELEMENT -->
+    
+  </div>
+</div></section>
+
+
+<section id="team"><div class="container col-middle">
+  <h2>The Team</h2>
+  <ul>
+    <li>
+      <!-- These are placeholder images and should be changed! -->
+      <img src="assets/img/1_vizwiz.png" alt="vizwiz">
+      <p>Vizwiz</p>
+      <p>Artist</p>
+    </li>
+    <li>
+      <img src="assets/img/0_kape.png" alt="kape.sol">
+      <p>Kape.sol</p>
+      <p>Dev</p>
+    </li>
+    <li>
+      <img src="assets/img/2_telomere.png" alt="telomere">
+      <p>Telomere</p>
+      <p>Shill</p>
+    </li>
+  </ul>
+</div></section>
+</main>
+
+
+
+<footer><div class="container">
+  <article class="footer__left">
+    <nav>
+      <ul>
+        <!-- CHANGE THE LINKS BELOW -->
+        <li><a href="https://twitter.com/SolNoodleShop"><img src="assets/img/icon-twitter.svg" alt="Twitter icon"></a></li>
+        <li><a href="https://discord.gg/XKXgnbXVHf"><img src="assets/img/icon-discord.svg" alt="Discord icon"></a></li>
+      </ul>
+    </nav>
+  </article>
+  <article class="footer__middle">
+    <a href="#hero"><img src="assets/img/ramen-logo.svg" alt=""></a>
+  </article>
+  <article class="footer__right">
+    <p>&copy; Solana Noodle Shop</p>
+  </article>
+</div></footer>
+
+
+
+
+<!-- Footer -->
+<script src="js/app-min.js"></script>
+
+</body>
 </html>

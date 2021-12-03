@@ -1,0 +1,54 @@
+// ==========================================================================
+// $hero
+// ==========================================================================
+
+#hero {
+  width: 100vw;
+  min-height: 100vh;
+  padding-top: 20vh;
+  text-align: center;
+  overflow: hidden;
+
+  h1 {
+    margin-bottom: 0.2em;
+  }
+
+  p {
+    padding: 0 span(1);
+    font-size: 1.3em;
+  }
+
+  img {
+    // @include center(horizontal);
+    width: 160vw;
+    max-width: 160vw;
+    margin-top: 10vh;
+    transform: translateX(-10vw);
+  }
+
+
+  @include media('>=tablet') {
+    padding-top: 25vh;
+  }
+
+
+  @include media('>=tablet') {
+    img {
+      margin-top: 15vh;
+    }
+  }
+
+  
+  @include media('>=tablet-l', 'landscape') {
+    // padding-top: 20vh;
+    
+    p {
+      padding: 0 span(3) + gutter(4);
+    }
+
+    img {
+      width: 120vw;
+      margin-top: 15vh;
+    }
+  }
+}

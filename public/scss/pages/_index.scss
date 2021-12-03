@@ -1,0 +1,17 @@
+// Pages
+// =====
+
+// @source - http://atomicdesign.bradfrost.com/chapter-2/#pages
+
+// Pages are specific instances of templates that show what a UI looks like with real representative content in place. They are essential for testing the effectiveness of the underlying design system.
+
+// Pages also provide a place to articulate variations in templates, which is crucial for establishing robust and reliant design systems. (e.g. Users with administrative privileges might see additional buttons and options on their dashboard compared to users who aren’t admins.) The underlying templates may be the same, but the user interfaces change to reflect the dynamic nature of the content.
+
+
+
+
+// ==========================================================================
+// $imports
+// ==========================================================================
+
+@import 'home';

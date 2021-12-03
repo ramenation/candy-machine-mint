@@ -1,0 +1,74 @@
+// ==========================================================================
+// $container
+// ==========================================================================
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @include media('>=tablet') {
+    width: 95%;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $section
+// ==========================================================================
+
+section {
+  position: relative;
+  padding: span(2) 0;
+
+  @include media('>=tablet-l', 'landscape') {
+    padding: span(1) 0;
+  }
+}
+
+
+
+
+
+// ==========================================================================
+// 42-col
+// ==========================================================================
+
+.col-2,
+.col-middle {
+  @include media('>=tablet') {
+    padding: 0 span(1);
+  }
+
+  @include media('>=desktop-l') {
+    width: span(10);
+  }
+}
+
+
+.col-2 {
+  @include media('>=tablet-l', 'landscape') {
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+
+    p {
+      margin-top: 2em;
+    }
+
+    &__left {
+      width: span(5);
+    }
+
+    &__right {
+      width: span(5) + gutter(5);
+    }
+  }
+
+  
+}
+
+.col-middle {
+  margin-top: rem(50);
+}

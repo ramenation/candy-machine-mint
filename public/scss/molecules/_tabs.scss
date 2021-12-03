@@ -1,0 +1,117 @@
+// ==========================================================================
+// $tabs
+// ==========================================================================
+
+.tabs {
+  margin-top: rem(80);
+  overflow: hidden;
+  border-top: rem(2) solid $red;
+
+  input[type="checkbox"] {
+    @include hide-visually;
+  }
+
+  @include media('>=tablet-l', 'landscape') {
+    width: span(8);
+    margin: 0 auto;
+  }
+}
+
+
+//
+// $tabs checked
+// ==========================================================================
+
+.tabs input:checked {
+  + .tab__label {
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+
+  ~ .tab__content {
+    max-height: 100vh;
+    padding: 0 0 1em;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $tab
+// ==========================================================================
+
+.tab {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: rem(2) solid $red;
+
+  p {
+    margin-top: 0;
+  }
+}
+
+
+
+
+// ==========================================================================
+// $tab__label
+// ==========================================================================
+
+.tab__label {
+  display: flex;
+  align-items: center;
+  padding: 1em 0;
+  font-weight: bold;
+  cursor: pointer;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    background: {
+      size: contain;
+      position: center;
+      repeat: no-repeat;
+    }
+  }
+
+  &::before {
+    width: rem(24);
+    height: rem(24);
+    margin-right: rem(15);
+    background: {
+      image: img('icon-ramen.svg');
+    }
+  }
+
+  span {
+    flex-grow: 2;
+    padding-right: 1em;
+  }
+  
+  
+  &::after {
+    width: 0.8em;
+    height: 0.8em;
+    margin-left: 0.5em;
+    background: {
+      image: img('icon-arrow.svg');
+    }
+  }
+}
+
+
+
+
+// ==========================================================================
+// $tab__content
+// ==========================================================================
+
+.tab__content {
+  max-height: 0;
+  padding: 0;
+  transition: all .35s;
+}
+

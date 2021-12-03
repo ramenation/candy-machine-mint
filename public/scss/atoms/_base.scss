@@ -1,0 +1,66 @@
+// ==========================================================================
+// $base prelims
+// ==========================================================================
+
+// Tells browser to render viewport width as device width:
+@viewport { width: device-width; }
+
+// Tells browsers to switch to the border-box-sizing property:
+*,
+*:after,
+*:before { box-sizing: border-box; }
+
+// Apply base font size to html:
+@include typi-init;
+
+
+
+
+// ==========================================================================
+// $base
+// ==========================================================================
+
+html {
+  height: 100%;
+}
+
+body {
+  @include font-smoothing;
+  width: 100vw;
+  text-rendering: optimizeLegibility;
+  min-height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: $font-family-default;
+  background-color: $black;
+  color: $white;
+}
+
+img, video {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+
+
+
+// ==========================================================================
+// $typography
+// ==========================================================================
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+h2, h3 {
+  margin-bottom: 0.5em;
+}
+
+h1 { @include typi('h1'); }
+h2 { @include typi('h2'); }
+h3 { @include typi('h3'); }

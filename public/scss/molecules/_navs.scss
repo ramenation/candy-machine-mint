@@ -1,0 +1,25 @@
+// ==========================================================================
+// $nav
+// ==========================================================================
+
+nav {
+  font-weight: 500;
+  text-transform: uppercase;
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    max-width: rem(50);
+    display: inline-block;
+  }
+
+  ul {
+    @include reset-list;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
